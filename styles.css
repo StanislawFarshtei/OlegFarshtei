@@ -1,0 +1,586 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mitr:wght@300;600&family=Montserrat:wght@100&family=Permanent+Marker&family=Roboto&family=Vidaloka&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  height: 100vh;
+  width: 20px;
+  background-color: #005bbb;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffd500;
+  height: 20px;
+}
+
+nav {
+  display: flex;
+  position: sticky;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-left: 10%;
+  background-color: #005bbb;
+}
+
+.nav-links {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+
+.nav-item a {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #ffd500;
+}
+
+.nav-item:hover {
+  background-color: #ffd500;
+}
+
+.nav-item:hover a {
+  color: #005bbb;
+  font-family: "Montserrat", sans-serif;
+}
+
+#ukrainian {
+  width: 15%;
+  height: auto;
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  animation: mymove 4s;
+  filter: drop-shadow(0 0 0.75rem crimson);
+}
+#belgian {
+  width: 15%;
+  height: auto;
+  position: absolute;
+  top: 55%;
+  left: 40%;
+  animation: mymove 4s;
+  filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+html,
+body {
+  background: linear-gradient(180deg, #005bbb, #ffd500) no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 10px;
+}
+
+.front-page {
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  display: inline;
+  width: fit-content;
+  position: relative;
+  z-index: 2;
+  top: 15%;
+  left: 10%;
+  animation: myHeaderMove 3s;
+}
+
+@keyframes myHeaderMove {
+  from {
+    left: -120%;
+    top: 30%;
+  }
+  to {
+    left: 10%;
+    top: 15%;
+  }
+}
+
+input {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  background: none;
+  border: none;
+  color: #eee;
+  margin-left: 2px;
+}
+
+input:hover {
+  cursor: pointer;
+  color: rgb(234, 41, 41);
+  border: 0 solid #eee;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+figure {
+  display: block;
+  position: relative;
+  z-index: 1;
+  max-width: fit-content;
+  height: auto;
+  top: -20%;
+  left: 55%;
+  animation: mymove 4s;
+}
+
+@keyframes mymove {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.my-image {
+  display: block;
+  max-width: fit-content;
+  width: 75%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 2;
+}
+
+figcaption {
+  display: block;
+  margin-top: -5px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+  background-color: #005bbb;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #eee;
+  text-align: center;
+  position: relative;
+  top: -20%;
+  z-index: 3;
+}
+
+h1 {
+  display: block;
+  font-family: "Dancing Script", sans-serif;
+  font-size: 4.5rem;
+  font-weight: lighter;
+  color: #ffd500;
+}
+
+p {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  color: #eee;
+}
+
+h2 {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.6rem;
+  color: #eee;
+  text-align: center;
+}
+
+.carousel {
+  margin-top: 50%;
+}
+
+ul {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  list-style-type: none;
+  max-width: 100%;
+  width: 80vw;
+  margin: 50px auto 30px auto;
+  padding: 0px 20px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+ul > li > a {
+  text-decoration: none;
+  color: #eee;
+  padding: 2px;
+  font-family: "Dancing Script", sans-serif;
+}
+
+ul > li > a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #eee;
+  border-radius: 50%;
+  font-family: "Dancing Script", sans-serif;
+}
+
+ul > li > a:active {
+  color: rgb(174, 137, 230);
+}
+
+/* SOCIAL WRAPPER */
+
+.wrapper {
+  padding-bottom: 100px;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+.wrapper .button {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 0 5px;
+  float: inherit;
+  overflow: hidden;
+  background: #005bbb;
+  color: #eee;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover {
+  width: 200px;
+}
+
+.wrapper .button .icon {
+  display: inline-block;
+  margin: 0 auto;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1) .icon {
+  background: #4267b2;
+}
+
+.wrapper .button:nth-child(2) .icon {
+  background: #e1306c;
+}
+
+.wrapper .button:nth-child(3) .icon {
+  background: #333;
+}
+
+.wrapper .button .icon i {
+  font-size: 25px;
+  line-height: 60px;
+}
+
+.wrapper .button span > a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  color: inherit;
+}
+
+.wrapper .button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+}
+
+.fa-envelope {
+  color: #eee;
+}
+
+.social {
+  margin-top: 10%;
+}
+
+#delta-image {
+  width: 10%;
+  height: auto;
+}
+
+#delta-image:hover {
+  border: 1px solid rgb(251, 101, 101);
+}
+
+#ukrainian-small,
+#belgian-small {
+  width: 3%;
+  height: auto;
+}
+
+.footer {
+  margin: 0 auto 5% auto;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #eee;
+  padding: 2px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+footer a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(251, 101, 101);
+  border-radius: 50%;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer a:active {
+  color: rgb(174, 137, 230);
+}
+
+/* scroll to top btn */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #005bbb; /* Set a background color */
+  color: #ffd500; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: rgb(251, 101, 101);
+}
+
+/* Mobile */
+
+@media only screen and (max-device-width: 480px) {
+  nav {
+    display: flex;
+    position: sticky;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #005bbb;
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+  }
+
+  .nav-item a {
+    font-family: "Montserrat", sans-serif;
+    display: inline-block;
+    font-size: 0.5rem;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #ffd500;
+  }
+
+  .nav-item:hover {
+    background-color: #ffd500;
+  }
+
+  .nav-item:hover a {
+    color: #005bbb;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  figure {
+    top: 10%;
+    left: 0;
+    width: 100%;
+  }
+
+  .header {
+    top: 10%;
+  }
+
+  @keyframes myHeaderMove {
+    from {
+      left: -120%;
+      top: 10%;
+    }
+    to {
+      left: 10%;
+      top: 10%;
+    }
+  }
+
+  #ukrainian {
+    width: 25%;
+    height: auto;
+    position: absolute;
+    top: 85%;
+    left: 10%;
+    animation: mymove 4s;
+    filter: drop-shadow(0 0 0.75rem crimson);
+  }
+  #belgian {
+    width: 25%;
+    height: auto;
+    position: absolute;
+    top: 85%;
+    left: 65%;
+    animation: mymove 4s;
+    filter: drop-shadow(0 0 0.75rem crimson);
+  }
+
+  figcaption {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  h2 {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    color: #eee;
+    text-align: center;
+  }
+
+  ul {
+    margin-left: 10%;
+    margin-top: 5%;
+    text-align: left;
+    padding: 2%;
+    font-size: 1rem;
+  }
+
+  .front-page {
+    width: 100vw;
+    height: 740px;
+  }
+  /* wrapper */
+
+  .wrapper {
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .wrapper .button {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    float: inherit;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+  }
+
+  .wrapper .button:hover {
+    width: 200px;
+  }
+
+  .wrapper .button .icon {
+    display: inline-block;
+    margin: 0 auto;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 40px;
+    transition: all 0.3s ease-out;
+  }
+
+  .wrapper .button:nth-child(1) .icon {
+    background: #4267b2;
+  }
+
+  .wrapper .button:nth-child(2) .icon {
+    background: #e1306c;
+  }
+
+  .wrapper .button:nth-child(3) .icon {
+    background: #333;
+  }
+
+  .wrapper .button .icon i {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  .wrapper .button span > a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-left: 10px;
+    color: inherit;
+  }
+
+  .wrapper .button span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-left: 10px;
+  }
+
+  .fa-envelope {
+    color: #eee;
+  }
+}

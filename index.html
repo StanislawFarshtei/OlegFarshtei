@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/77290dcfd4.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li class="nav-item"><a href="#">Download CV</a></li>
+        <li class="nav-item"><a href="mailto:oleg.farchteyn@hotmail.com" target="_blank"">Email: oleg.farchteyn@hotmail.com
+        </a></li>
+        <li class="nav-item"><a href="tel:+32484983505" target="_blank">Phone: +32484983505</a></li>
+      </ul>
+    </nav>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      Top</span></button>
+    <img id="belgian"
+      src="https://freesvg.org/img/1612118583belgian-flag-painted.png"
+      alt="belgian">
+    <img id="ukrainian"
+      src="https://freesvg.org/img/1618138547Ukraine-painted-flag.png"
+      alt="ukrainian">
+    <section class="front-page">
+      <header class="header">
+        <h1>Oleg Farshtei</h1>
+        <p>Radio engineer and great father</p>
+        <input type="button"
+          onClick="document.getElementById('mainSection').scrollIntoView();"
+          value="Scroll down" />
+      </header>
+      <figure>
+        <img class="my-image"
+          src="https://i.ibb.co/wKxYTTG/batia-3.png" alt="batia-3"
+          alt="image of Oleg Farchteyn" />
+        <figcaption>"...be a man and a human being."</figcaption>
+      </figure>
+    </section>
+    <main class="main" id="mainSection">
+      <section class="timeline">
+        <h2>Oleg's life </h2>
+        <ul>
+          <li>On April 5th 1964 Oleg meets life.</li>
+          <li>In 1983 he becomes a radio engineer.</li>
+          <li>He becomes a sergeant in 1985.</li>
+          <li>In 1986 he marries his wife <a type="url"
+              href="https://www.facebook.com/natalia.farshtei.1">Natalia </a>
+            and starts a family.</li>
+          <li>In 1991 when Soviet Union collapses he develops a plan to
+            make it
+            in life.</li>
+          <li>Soon he starts his own company.</li>
+          <li>After some set backs he decides to start his life over from
+            scratch, he
+            develops a plan to immigrate, by that time (2002) he has two
+            sons, <a href="https://www.facebook.com/stanislav.farshtei">Stanislav</a>
+            and <a href="https://www.facebook.com/maximfarshtei">Maxim</a>.</li>
+          <li>In 2010 he starts working at <a
+              href="https://nl.delta-engineering.be/" alt="delta"><img
+                id="delta-image"
+                src="https://delta-engineering.be/wp-content/uploads/2015/05/delta-white-logo-transparent-280x73.png"></a>
+            a belgian
+            company.</li>
+          <li>By the age of almost 60 he has a good life. His children are
+            educated. Together with his wife Natalia they are awaiting
+            grandchildren. They have many friends and acquaintances.</li>
+          <li>In 2022 he is proud to be a Ukrainian-Belgian <img id="belgian-small"
+            src="https://freesvg.org/img/1612118583belgian-flag-painted.png"
+            alt="belgian">
+          <img id="ukrainian-small"
+            src="https://freesvg.org/img/1618138547Ukraine-painted-flag.png"
+            alt="ukrainian">
+            !!</li>
+        </ul>
+      </section>
+      <section class="social">
+        <div class="wrapper">
+          <div class="button">
+            <div class="icon"><i class="fab fa-facebook"></i></div>
+            <span><a href="https://www.facebook.com/oleg.farchteyn"
+                target="_blank">Facebook</a></span>
+          </div>
+          <div class="button">
+            <div class="icon"><i class="fab fa-instagram"></i></div>
+            <span><a href="https://www.instagram.com/farchteyn/"
+                target="_blank">Instagram</a></span>
+          </div>
+          <div class="button">
+            <div class="icon"><i class="fas fa-envelope"></i></div>
+            <span><a href="mailto:oleg.farchteyn@hotmail.com" target="_blank">Email</a></span>
+          </div>
+          <div class="button">
+            <div class="icon"><i class="fa-solid fa-phone"></i></a></div>
+          <span><a href="tel:+32484983505" target="_blank">Phone</a></span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><i class="far fa-copyright"></i> <a
+      href="https://www.facebook.com/stanislav.farshtei">Stas Farshtei</footer>
+    <script>
+    mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+  </script>
+  </body>
+</html>
