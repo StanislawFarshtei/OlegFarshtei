@@ -506,7 +506,7 @@ footer a:active {
     width: 100vw;
     height: 740px;
   }
-  /* wrapper SOCIAL MEDIA */
+  /* wrapper */
 
   .wrapper {
     padding-bottom: 50px;
@@ -587,8 +587,6 @@ footer a:active {
   }
 }
 
-/* large screens */
-
 @media screen and (min-width: 1400px) {
   figure {
     top: 0;
@@ -604,4 +602,3 @@ footer a:active {
     top: 20%;
   }
 }
-
