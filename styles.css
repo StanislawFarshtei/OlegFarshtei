@@ -506,7 +506,7 @@ footer a:active {
     width: 100vw;
     height: 740px;
   }
-  /* wrapper */
+  /* wrapper SOCIAL MEDIA */
 
   .wrapper {
     padding-bottom: 50px;
@@ -524,7 +524,9 @@ footer a:active {
     margin: 0 5px;
     float: inherit;
     overflow: hidden;
-    background: #fff;
+    background: #005bbb;
+    color: #eee;
+    font-family: "Montserrat", sans-serif;
     border-radius: 50px;
     cursor: pointer;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
@@ -584,3 +586,22 @@ footer a:active {
     color: #eee;
   }
 }
+
+/* large screens */
+
+@media screen and (min-width: 1400px) {
+  figure {
+    top: 0;
+  }
+}
+@media screen and (min-width: 1600px) {
+  figure {
+    top: 10%;
+  }
+}
+@media screen and (min-width: 1900px) {
+  figure {
+    top: 20%;
+  }
+}
+
